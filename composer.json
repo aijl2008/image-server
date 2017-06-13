@@ -1,0 +1,12 @@
+{
+  "require": {
+    "monolog/monolog": "^1.22",
+    "intervention/image": "^2.3",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

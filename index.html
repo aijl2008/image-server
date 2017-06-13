@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>远程图片裁剪</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+
+<form class="form-horizontal" action="./app.php" method="get">
+    <div class="form-group">
+        <label for="url" class="col-sm-2 control-label">图片URL</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" name="url" placeholder="Email"
+                   value="http://image.nationalgeographic.com.cn/2017/0605/20170605041439372.jpg">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="width" class="col-sm-2 control-label">裁剪宽</label>
+        <div class="col-sm-1">
+            <input type="text" class="form-control" name="width" value="100">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="width" class="col-sm-2 control-label">裁剪高</label>
+        <div class="col-sm-1">
+            <input type="text" class="form-control" name="height" value="100">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-8">
+            <button type="submit" class="btn btn-default">裁剪</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
